@@ -1,0 +1,50 @@
+# Logfile created on 2017-08-19 02:07:23 +1000 by logger.rb/56815
+I, [2017-08-19T02:07:23.347876 #3204]  INFO -- : Bake My Day v0.1.0 Populating Menu... 
+
+A, [2017-08-19T02:07:23.347990 #3204]   ANY -- : 	Item 0 found.
+A, [2017-08-19T02:07:23.348262 #3204]   ANY -- : 	Item 0 found.
+A, [2017-08-19T02:07:23.348339 #3204]   ANY -- : 	Item 1 found.
+A, [2017-08-19T02:07:23.348434 #3204]   ANY -- : 	Item 1 found.
+A, [2017-08-19T02:07:23.348597 #3204]   ANY -- : 	Item 1 found.
+A, [2017-08-19T02:07:23.348751 #3204]   ANY -- : 	Item 2 found.
+A, [2017-08-19T02:07:23.348812 #3204]   ANY -- : 	Item 2 found.
+A, [2017-08-19T02:07:23.348982 #3204]   ANY -- : 	Item 2 found.
+A, [2017-08-19T02:07:23.349096 #3204]   ANY -- : VS5 Vegemite Scroll
+A, [2017-08-19T02:07:23.349207 #3204]   ANY -- : 3 at $ 6.99
+A, [2017-08-19T02:07:23.349272 #3204]   ANY -- : 5 at $ 8.99
+A, [2017-08-19T02:07:23.349370 #3204]   ANY -- : MB11 Blueberry Muffin
+A, [2017-08-19T02:07:23.349460 #3204]   ANY -- : 2 at $ 9.95
+A, [2017-08-19T02:07:23.349553 #3204]   ANY -- : 5 at $ 16.95
+A, [2017-08-19T02:07:23.349646 #3204]   ANY -- : 8 at $ 24.95
+A, [2017-08-19T02:07:23.349774 #3204]   ANY -- : CF Croissant
+A, [2017-08-19T02:07:23.349939 #3204]   ANY -- : 3 at $ 5.95
+A, [2017-08-19T02:07:23.350071 #3204]   ANY -- : 5 at $ 9.95
+A, [2017-08-19T02:07:23.350207 #3204]   ANY -- : 9 at $ 16.99
+A, [2017-08-19T02:07:23.350318 #3204]   ANY -- : 
+[Quantity]<space>[Item Code] >> 
+D, [2017-08-19T02:07:27.394797 #3204] DEBUG -- : 
+Input.new: { quantity: 16, item code: VFS3 }
+
+A, [2017-08-19T02:07:27.395042 #3204]   ANY -- : 	Item VFS3 not found.
+A, [2017-08-19T02:07:27.395188 #3204]   ANY -- : 	Item VFS3 not found.
+D, [2017-08-19T02:07:27.395329 #3204] DEBUG -- : 
+OrderItem.new: { remaining_units: 16menu_item: 0 }
+
+D, [2017-08-19T02:07:27.395489 #3204] DEBUG -- : remaining_units: 16 pack_units: 5
+D, [2017-08-19T02:07:27.395722 #3204] DEBUG -- : 
+Pack.new: { number of packs: 3, cost per pack of (5): 8.99, total cost for: 3 packs: 26.97 }
+
+D, [2017-08-19T02:07:27.395964 #3204] DEBUG -- : 
+Added 3 packs of 5-pack at $8.99per pack, total: $26.97 to order item.
+A, [2017-08-19T02:07:27.396063 #3204]   ANY -- : 
+Extra Remaining Unit: 1 that cannot be grouped into a pack.
+D, [2017-08-19T02:07:27.396194 #3204] DEBUG -- : 
+	Added 16 of VFS3 to order.
+A, [2017-08-19T02:07:27.396306 #3204]   ANY -- : 	16 of Vegemite Scroll (VS5) at $ 26.97
+A, [2017-08-19T02:07:27.396443 #3204]   ANY -- : 		3 x 5-pack at $8.99 a pack with total: 26.97
+A, [2017-08-19T02:07:27.396570 #3204]   ANY -- : 
+Total for this order: 26.97
+A, [2017-08-19T02:07:27.396679 #3204]   ANY -- : 
+[Quantity]<space>[Item Code] >> 
+I, [2017-08-19T02:09:03.414020 #3204]  INFO -- : 
+End Simulation.

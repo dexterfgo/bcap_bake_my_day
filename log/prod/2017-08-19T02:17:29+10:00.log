@@ -1,0 +1,42 @@
+# Logfile created on 2017-08-19 02:17:29 +1000 by logger.rb/56815
+I, [2017-08-19T02:17:29.072855 #3300]  INFO -- : Bake My Day v0.1.0 Populating Menu... 
+
+A, [2017-08-19T02:17:29.073029 #3300]   ANY -- : 	Item 0 found.
+A, [2017-08-19T02:17:29.073088 #3300]   ANY -- : 	Item 0 found.
+A, [2017-08-19T02:17:29.073152 #3300]   ANY -- : 	Item 1 found.
+A, [2017-08-19T02:17:29.073203 #3300]   ANY -- : 	Item 1 found.
+A, [2017-08-19T02:17:29.073254 #3300]   ANY -- : 	Item 1 found.
+A, [2017-08-19T02:17:29.073315 #3300]   ANY -- : 	Item 2 found.
+A, [2017-08-19T02:17:29.073366 #3300]   ANY -- : 	Item 2 found.
+A, [2017-08-19T02:17:29.073416 #3300]   ANY -- : 	Item 2 found.
+A, [2017-08-19T02:17:29.073476 #3300]   ANY -- : VS5 Vegemite Scroll
+A, [2017-08-19T02:17:29.073550 #3300]   ANY -- : 3 at $ 6.99
+A, [2017-08-19T02:17:29.073604 #3300]   ANY -- : 5 at $ 8.99
+A, [2017-08-19T02:17:29.073654 #3300]   ANY -- : MB11 Blueberry Muffin
+A, [2017-08-19T02:17:29.073706 #3300]   ANY -- : 2 at $ 9.95
+A, [2017-08-19T02:17:29.073801 #3300]   ANY -- : 5 at $ 16.95
+A, [2017-08-19T02:17:29.073854 #3300]   ANY -- : 8 at $ 24.95
+A, [2017-08-19T02:17:29.073904 #3300]   ANY -- : CF Croissant
+A, [2017-08-19T02:17:29.073955 #3300]   ANY -- : 3 at $ 5.95
+A, [2017-08-19T02:17:29.074007 #3300]   ANY -- : 5 at $ 9.95
+A, [2017-08-19T02:17:29.074061 #3300]   ANY -- : 9 at $ 16.99
+A, [2017-08-19T02:17:29.074122 #3300]   ANY -- : 
+[Quantity]<space>[Item Code] >> 
+D, [2017-08-19T02:17:34.040130 #3300] DEBUG -- : 
+Input.new: { quantity: 18, item code: JAKSHD }
+
+A, [2017-08-19T02:17:34.040373 #3300]   ANY -- : 	Item JAKSHD not found.
+A, [2017-08-19T02:17:34.040519 #3300]   ANY -- : 	Item JAKSHD not found.
+D, [2017-08-19T02:17:34.040659 #3300] DEBUG -- : 
+OrderItem.new: { remaining_units: 18 menu_item: -1 }
+
+A, [2017-08-19T02:17:34.040754 #3300]   ANY -- : Item with code: JAKSHD was not found.
+D, [2017-08-19T02:17:34.040881 #3300] DEBUG -- : 
+	Added 18 of JAKSHD to order.
+A, [2017-08-19T02:17:34.041090 #3300]   ANY -- : 	18 of Croissant (CF) at $ 0.0
+A, [2017-08-19T02:17:34.041335 #3300]   ANY -- : 
+Total for this order: 0.0
+A, [2017-08-19T02:17:34.041452 #3300]   ANY -- : 
+[Quantity]<space>[Item Code] >> 
+I, [2017-08-19T02:19:29.179386 #3300]  INFO -- : 
+End Simulation.

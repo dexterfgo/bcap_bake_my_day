@@ -1,0 +1,41 @@
+# Logfile created on 2017-08-19 01:39:42 +1000 by logger.rb/56815
+I, [2017-08-19T01:39:42.526773 #2943]  INFO -- : Bake My Day v0.1.0 Populating Menu... 
+
+A, [2017-08-19T01:39:42.527034 #2943]   ANY -- : VS5 Vegemite Scroll
+A, [2017-08-19T01:39:42.527123 #2943]   ANY -- : 3 at $ 6.99
+A, [2017-08-19T01:39:42.527180 #2943]   ANY -- : 5 at $ 8.99
+A, [2017-08-19T01:39:42.527229 #2943]   ANY -- : MB11 Blueberry Muffin
+A, [2017-08-19T01:39:42.527280 #2943]   ANY -- : 2 at $ 9.95
+A, [2017-08-19T01:39:42.527332 #2943]   ANY -- : 5 at $ 16.95
+A, [2017-08-19T01:39:42.527429 #2943]   ANY -- : 8 at $ 24.95
+A, [2017-08-19T01:39:42.527477 #2943]   ANY -- : CF Croissant
+A, [2017-08-19T01:39:42.527528 #2943]   ANY -- : 3 at $ 5.95
+A, [2017-08-19T01:39:42.527579 #2943]   ANY -- : 5 at $ 9.95
+A, [2017-08-19T01:39:42.527630 #2943]   ANY -- : 9 at $ 16.99
+A, [2017-08-19T01:39:42.527690 #2943]   ANY -- : 
+[Quantity]<space>[Item Code] >> 
+D, [2017-08-19T01:39:48.490662 #2943] DEBUG -- : 
+Input.new: { quantity: 12, item code: VFS5 }
+
+D, [2017-08-19T01:39:48.490935 #2943] DEBUG -- : 
+OrderItem.new: { remaining_units: 12 }
+
+D, [2017-08-19T01:39:48.491099 #2943] DEBUG -- : remaining_units: 12 pack_units: 5
+D, [2017-08-19T01:39:48.491241 #2943] DEBUG -- : 
+Pack.new: { number of packs: 2, cost per pack of (5): 8.99, total cost for: 2 packs: 17.98 }
+
+D, [2017-08-19T01:39:48.491479 #2943] DEBUG -- : 
+Added 2 packs of 5-pack at $8.99per pack, total: $17.98 to order item.
+A, [2017-08-19T01:39:48.491682 #2943]   ANY -- : 
+Extra Remaining Unit: 2 that cannot be grouped into a pack.
+D, [2017-08-19T01:39:48.491821 #2943] DEBUG -- : 
+	Added 12 of VFS5 to order.
+A, [2017-08-19T01:39:48.491936 #2943]   ANY -- : 	12 of Vegemite Scroll (VS5) at $ 17.98
+A, [2017-08-19T01:39:48.492063 #2943]   ANY -- : 		2 x 5-pack at $8.99 a pack.
+A, [2017-08-19T01:39:48.492185 #2943]   ANY -- : 		 Pack total: 17.98
+A, [2017-08-19T01:39:48.492307 #2943]   ANY -- : 
+Total for this order: 17.98
+A, [2017-08-19T01:39:48.492418 #2943]   ANY -- : 
+[Quantity]<space>[Item Code] >> 
+I, [2017-08-19T01:40:49.908438 #2943]  INFO -- : 
+End Simulation.

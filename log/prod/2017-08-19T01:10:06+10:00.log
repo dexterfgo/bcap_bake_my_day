@@ -1,0 +1,88 @@
+# Logfile created on 2017-08-19 01:10:06 +1000 by logger.rb/56815
+I, [2017-08-19T01:10:06.177982 #2452]  INFO -- : Bake My Day v0.1.0 Populating Menu... 
+
+A, [2017-08-19T01:10:06.178152 #2452]   ANY -- : 
+VS5 Vegemite Scroll
+A, [2017-08-19T01:10:06.178233 #2452]   ANY -- : 
+3 at $ 6.99
+A, [2017-08-19T01:10:06.178289 #2452]   ANY -- : 
+5 at $ 8.99
+A, [2017-08-19T01:10:06.178339 #2452]   ANY -- : 
+MB11 Blueberry Muffin
+A, [2017-08-19T01:10:06.178412 #2452]   ANY -- : 
+2 at $ 9.95
+A, [2017-08-19T01:10:06.178465 #2452]   ANY -- : 
+5 at $ 16.95
+A, [2017-08-19T01:10:06.178517 #2452]   ANY -- : 
+8 at $ 24.95
+A, [2017-08-19T01:10:06.178566 #2452]   ANY -- : 
+CF Croissant
+A, [2017-08-19T01:10:06.178618 #2452]   ANY -- : 
+3 at $ 5.95
+A, [2017-08-19T01:10:06.178670 #2452]   ANY -- : 
+5 at $ 9.95
+A, [2017-08-19T01:10:06.178721 #2452]   ANY -- : 
+9 at $ 16.99
+A, [2017-08-19T01:10:06.178830 #2452]   ANY -- : 
+[Quantity]<space>[Item Code] >> 
+D, [2017-08-19T01:10:16.524185 #2452] DEBUG -- : 
+Input.new: { quantity: 10, item code: VFS }
+
+D, [2017-08-19T01:10:16.524470 #2452] DEBUG -- : 
+OrderItem.new: { remaining_units: 10 }
+
+D, [2017-08-19T01:10:16.524645 #2452] DEBUG -- : remaining_units: 10 pack_units: 5
+D, [2017-08-19T01:10:16.524793 #2452] DEBUG -- : 
+Pack.new: { number of packs: 2, cost per pack of (5): 8.99, total cost for: 2 packs: 17.98 }
+
+D, [2017-08-19T01:10:16.525135 #2452] DEBUG -- : 
+Added 2 packs of 5-pack at $8.99per pack, total: $17.98 to order item.
+A, [2017-08-19T01:10:16.525200 #2452]   ANY -- : 10 of Vegemite Scroll (VS5) at $ 17.98
+A, [2017-08-19T01:10:16.525290 #2452]   ANY -- : 2 x 5-pack at $8.99 a pack.
+A, [2017-08-19T01:10:16.525447 #2452]   ANY -- : Total: 17.98
+D, [2017-08-19T01:10:16.525511 #2452] DEBUG -- : 
+Added 10 of VFS to order.
+A, [2017-08-19T01:10:16.525714 #2452]   ANY -- : 10 of Vegemite Scroll (VS5) at $ 17.98
+A, [2017-08-19T01:10:16.525782 #2452]   ANY -- : 2 x 5-pack at $8.99 a pack.
+A, [2017-08-19T01:10:16.525842 #2452]   ANY -- : Total: 17.98
+A, [2017-08-19T01:10:16.525900 #2452]   ANY -- : 
+[Quantity]<space>[Item Code] >> 
+D, [2017-08-19T01:10:51.453880 #2452] DEBUG -- : 
+Input.new: { quantity: 50, item code: CF }
+
+D, [2017-08-19T01:10:51.454138 #2452] DEBUG -- : 
+OrderItem.new: { remaining_units: 50 }
+
+D, [2017-08-19T01:10:51.454271 #2452] DEBUG -- : remaining_units: 50 pack_units: 9
+D, [2017-08-19T01:10:51.454409 #2452] DEBUG -- : 
+Pack.new: { number of packs: 5, cost per pack of (9): 16.99, total cost for: 5 packs: 84.94999999999999 }
+
+D, [2017-08-19T01:10:51.454612 #2452] DEBUG -- : 
+Added 5 packs of 9-pack at $16.99per pack, total: $84.95 to order item.
+D, [2017-08-19T01:10:51.454709 #2452] DEBUG -- : remaining_units: 5 pack_units: 3
+D, [2017-08-19T01:10:51.454826 #2452] DEBUG -- : 
+Pack.new: { number of packs: 1, cost per pack of (3): 5.95, total cost for: 1 packs: 90.89999999999999 }
+
+D, [2017-08-19T01:10:51.454939 #2452] DEBUG -- : 
+Added 1 packs of 3-pack at $5.95per pack, total: $90.9 to order item.
+A, [2017-08-19T01:10:51.455040 #2452]   ANY -- : 
+Extra Remaining Unit: 2 that cannot be grouped into a pack.
+A, [2017-08-19T01:10:51.455184 #2452]   ANY -- : 50 of Croissant (CF) at $ 90.89999999999999
+A, [2017-08-19T01:10:51.455407 #2452]   ANY -- : 5 x 9-pack at $16.99 a pack.
+A, [2017-08-19T01:10:51.455528 #2452]   ANY -- : Total: 84.95
+A, [2017-08-19T01:10:51.455653 #2452]   ANY -- : 1 x 3-pack at $5.95 a pack.
+A, [2017-08-19T01:10:51.455772 #2452]   ANY -- : Total: 90.9
+D, [2017-08-19T01:10:51.455888 #2452] DEBUG -- : 
+Added 50 of CF to order.
+A, [2017-08-19T01:10:51.455991 #2452]   ANY -- : 10 of Vegemite Scroll (VS5) at $ 17.98
+A, [2017-08-19T01:10:51.456112 #2452]   ANY -- : 2 x 5-pack at $8.99 a pack.
+A, [2017-08-19T01:10:51.456229 #2452]   ANY -- : Total: 17.98
+A, [2017-08-19T01:10:51.456371 #2452]   ANY -- : 50 of Croissant (CF) at $ 90.89999999999999
+A, [2017-08-19T01:10:51.456458 #2452]   ANY -- : 5 x 9-pack at $16.99 a pack.
+A, [2017-08-19T01:10:51.456593 #2452]   ANY -- : Total: 84.95
+A, [2017-08-19T01:10:51.456656 #2452]   ANY -- : 1 x 3-pack at $5.95 a pack.
+A, [2017-08-19T01:10:51.456715 #2452]   ANY -- : Total: 90.9
+A, [2017-08-19T01:10:51.456796 #2452]   ANY -- : 
+[Quantity]<space>[Item Code] >> 
+I, [2017-08-19T01:12:46.545053 #2452]  INFO -- : 
+End Simulation.

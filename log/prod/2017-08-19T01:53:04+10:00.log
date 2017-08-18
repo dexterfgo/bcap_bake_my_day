@@ -1,0 +1,48 @@
+# Logfile created on 2017-08-19 01:53:04 +1000 by logger.rb/56815
+I, [2017-08-19T01:53:04.646516 #3081]  INFO -- : Bake My Day v0.1.0 Populating Menu... 
+
+A, [2017-08-19T01:53:04.646645 #3081]   ANY -- : 	Item VS5 found.
+A, [2017-08-19T01:53:04.646729 #3081]   ANY -- : 	Item VS5 found.
+A, [2017-08-19T01:53:04.646795 #3081]   ANY -- : 	Item MB11 found.
+A, [2017-08-19T01:53:04.646847 #3081]   ANY -- : 	Item MB11 found.
+A, [2017-08-19T01:53:04.646898 #3081]   ANY -- : 	Item MB11 found.
+A, [2017-08-19T01:53:04.647003 #3081]   ANY -- : 	Item CF found.
+A, [2017-08-19T01:53:04.647055 #3081]   ANY -- : 	Item CF found.
+A, [2017-08-19T01:53:04.647106 #3081]   ANY -- : 	Item CF found.
+A, [2017-08-19T01:53:04.647167 #3081]   ANY -- : VS5 Vegemite Scroll
+A, [2017-08-19T01:53:04.647239 #3081]   ANY -- : 3 at $ 6.99
+A, [2017-08-19T01:53:04.647293 #3081]   ANY -- : 5 at $ 8.99
+A, [2017-08-19T01:53:04.647341 #3081]   ANY -- : MB11 Blueberry Muffin
+A, [2017-08-19T01:53:04.647392 #3081]   ANY -- : 2 at $ 9.95
+A, [2017-08-19T01:53:04.647443 #3081]   ANY -- : 5 at $ 16.95
+A, [2017-08-19T01:53:04.647494 #3081]   ANY -- : 8 at $ 24.95
+A, [2017-08-19T01:53:04.647541 #3081]   ANY -- : CF Croissant
+A, [2017-08-19T01:53:04.647592 #3081]   ANY -- : 3 at $ 5.95
+A, [2017-08-19T01:53:04.647643 #3081]   ANY -- : 5 at $ 9.95
+A, [2017-08-19T01:53:04.647693 #3081]   ANY -- : 9 at $ 16.99
+A, [2017-08-19T01:53:04.647753 #3081]   ANY -- : 
+[Quantity]<space>[Item Code] >> 
+D, [2017-08-19T01:53:09.172340 #3081] DEBUG -- : 
+Input.new: { quantity: 12, item code: VFS4 }
+
+D, [2017-08-19T01:53:09.172629 #3081] DEBUG -- : 
+OrderItem.new: { remaining_units: 12menu_item: 0 }
+
+D, [2017-08-19T01:53:09.172794 #3081] DEBUG -- : remaining_units: 12 pack_units: 5
+D, [2017-08-19T01:53:09.172941 #3081] DEBUG -- : 
+Pack.new: { number of packs: 2, cost per pack of (5): 8.99, total cost for: 2 packs: 17.98 }
+
+D, [2017-08-19T01:53:09.173181 #3081] DEBUG -- : 
+Added 2 packs of 5-pack at $8.99per pack, total: $17.98 to order item.
+A, [2017-08-19T01:53:09.173283 #3081]   ANY -- : 
+Extra Remaining Unit: 2 that cannot be grouped into a pack.
+D, [2017-08-19T01:53:09.173420 #3081] DEBUG -- : 
+	Added 12 of VFS4 to order.
+A, [2017-08-19T01:53:09.173533 #3081]   ANY -- : 	12 of Vegemite Scroll (VS5) at $ 17.98
+A, [2017-08-19T01:53:09.173770 #3081]   ANY -- : 		2 x 5-pack at $8.99 a pack with total: 17.98
+A, [2017-08-19T01:53:09.173896 #3081]   ANY -- : 
+Total for this order: 17.98
+A, [2017-08-19T01:53:09.174008 #3081]   ANY -- : 
+[Quantity]<space>[Item Code] >> 
+I, [2017-08-19T02:00:38.729337 #3081]  INFO -- : 
+End Simulation.

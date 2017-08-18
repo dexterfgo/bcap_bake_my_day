@@ -1,0 +1,30 @@
+# Logfile created on 2017-08-19 01:20:54 +1000 by logger.rb/56815
+I, [2017-08-19T01:20:54.398840 #2511]  INFO -- : Bake My Day v0.1.0 Populating Menu... 
+
+A, [2017-08-19T01:20:54.399010 #2511]   ANY -- : VS5 Vegemite Scroll
+A, [2017-08-19T01:20:54.399154 #2511]   ANY -- : 3 at $ 6.99
+A, [2017-08-19T01:20:54.399235 #2511]   ANY -- : 5 at $ 8.99
+A, [2017-08-19T01:20:54.399287 #2511]   ANY -- : MB11 Blueberry Muffin
+A, [2017-08-19T01:20:54.399338 #2511]   ANY -- : 2 at $ 9.95
+A, [2017-08-19T01:20:54.399391 #2511]   ANY -- : 5 at $ 16.95
+A, [2017-08-19T01:20:54.399442 #2511]   ANY -- : 8 at $ 24.95
+A, [2017-08-19T01:20:54.399491 #2511]   ANY -- : CF Croissant
+A, [2017-08-19T01:20:54.399542 #2511]   ANY -- : 3 at $ 5.95
+A, [2017-08-19T01:20:54.399640 #2511]   ANY -- : 5 at $ 9.95
+A, [2017-08-19T01:20:54.399692 #2511]   ANY -- : 9 at $ 16.99
+A, [2017-08-19T01:20:54.399753 #2511]   ANY -- : 
+[Quantity]<space>[Item Code] >> 
+D, [2017-08-19T01:22:10.348880 #2511] DEBUG -- : 
+Input.new: { quantity: 11, item code: VFS5 }
+
+D, [2017-08-19T01:22:10.349216 #2511] DEBUG -- : 
+OrderItem.new: { remaining_units: 11 }
+
+D, [2017-08-19T01:22:10.349391 #2511] DEBUG -- : remaining_units: 11 pack_units: 5
+D, [2017-08-19T01:22:10.349538 #2511] DEBUG -- : 
+Pack.new: { number of packs: 2, cost per pack of (5): 8.99, total cost for: 2 packs: 17.98 }
+
+D, [2017-08-19T01:22:10.349776 #2511] DEBUG -- : 
+Added 2 packs of 5-pack at $8.99per pack, total: $17.98 to order item.
+A, [2017-08-19T01:22:10.349883 #2511]   ANY -- : 
+Extra Remaining Unit: 1 that cannot be grouped into a pack.

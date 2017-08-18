@@ -17,23 +17,36 @@ class Menu
 	def display_menu
 		@items.sort_by {|q,p| p}.reverse
 		@items.each do |item|
-			Tracer.flash ("\n" + item.code.to_s + " " + item.description.to_s)
+			Tracer.flash (item.code.to_s + " " + item.description.to_s)
 			item.packages.each do |quantity, price| 
-				Tracer.flash "\n#{quantity} at $ #{price}"
+				Tracer.flash "#{quantity} at $ #{price}"
 			end
 		end
 	end
 
 	def search_code_in_menu(code)
-		@items.find { |item| item.code == code}
+		found_item = @items.select { |item| item.code == code}
+		if found_item.nil?
+			Tracer.flash "\tItem " + code + " not found."
+		else
+			Tracer.flash "\tItem " + found_item.first.code.to_s + " found."
+		end
+		return found_item.first
 	end
 
 	def get_index_from_code(item_code)
-		return @items.index(search_code_in_menu(item_code)).to_i
+		found_item_index = @items.index { |item| item.code == item_code}
+		if found_item_index.nil?
+			Tracer.flash "\tItem " + item_code + " not found."
+			found_item_index = -1
+		else
+			Tracer.flash "\tItem " + found_item_index.to_s + " found."
+		end
+		return found_item_index
 	end
 
 	def get_item_instance_from_code(item_code)
-		return @items[get_index_from_code(item_code)]
+		return @items[get_index_from_code(item_code).to_i]
 	end
 
 	def add_package_for_code(item_code,quantity,price)

@@ -10,7 +10,7 @@ class Input
 		@item_code = input.split(" ").at(1).to_s
 
 
-		Tracer.flash "\nInput.new: { quantity: " + @quantity.to_s + \
+		Tracer.debug "\nInput.new: { quantity: " + @quantity.to_s + \
 			", item code: " + @item_code.to_s + " }\n"
 
 	end

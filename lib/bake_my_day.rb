@@ -8,6 +8,9 @@ require_relative "bake_my_day/input"
 
 module BakeMyDay
 
+	Tracer.create(!ARGV.empty?)
+	Tracer.info "Bake My Day v" + BakeMyDay::VERSION + " Populating Menu... \n"
+
 	# Display menu at least once
 	Menu.instance.setup
 	Menu.instance.display_menu
@@ -30,6 +33,7 @@ module BakeMyDay
 		# Not "exit"? Parse input.
 		input = Input.new(terminal.strip.upcase)
 		order.add_item_to_order(input)
-		order.display
 	end
+
+	Tracer.info "\nEnd Simulation."
 end

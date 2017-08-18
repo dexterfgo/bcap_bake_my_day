@@ -1,0 +1,57 @@
+# Logfile created on 2017-08-19 01:40:50 +1000 by logger.rb/56815
+I, [2017-08-19T01:40:50.982926 #2965]  INFO -- : Bake My Day v0.1.0 Populating Menu... 
+
+A, [2017-08-19T01:40:50.983110 #2965]   ANY -- : VS5 Vegemite Scroll
+A, [2017-08-19T01:40:50.983413 #2965]   ANY -- : 3 at $ 6.99
+A, [2017-08-19T01:40:50.983479 #2965]   ANY -- : 5 at $ 8.99
+A, [2017-08-19T01:40:50.983674 #2965]   ANY -- : MB11 Blueberry Muffin
+A, [2017-08-19T01:40:50.983760 #2965]   ANY -- : 2 at $ 9.95
+A, [2017-08-19T01:40:50.983952 #2965]   ANY -- : 5 at $ 16.95
+A, [2017-08-19T01:40:50.984039 #2965]   ANY -- : 8 at $ 24.95
+A, [2017-08-19T01:40:50.984151 #2965]   ANY -- : CF Croissant
+A, [2017-08-19T01:40:50.984308 #2965]   ANY -- : 3 at $ 5.95
+A, [2017-08-19T01:40:50.984477 #2965]   ANY -- : 5 at $ 9.95
+A, [2017-08-19T01:40:50.984592 #2965]   ANY -- : 9 at $ 16.99
+A, [2017-08-19T01:40:50.984712 #2965]   ANY -- : 
+[Quantity]<space>[Item Code] >> 
+D, [2017-08-19T01:40:56.235928 #2965] DEBUG -- : 
+Input.new: { quantity: 12, item code: VFS5 }
+
+D, [2017-08-19T01:40:56.236205 #2965] DEBUG -- : 
+OrderItem.new: { remaining_units: 12 }
+
+D, [2017-08-19T01:40:56.236370 #2965] DEBUG -- : remaining_units: 12 pack_units: 5
+D, [2017-08-19T01:40:56.236513 #2965] DEBUG -- : 
+Pack.new: { number of packs: 2, cost per pack of (5): 8.99, total cost for: 2 packs: 17.98 }
+
+D, [2017-08-19T01:40:56.236748 #2965] DEBUG -- : 
+Added 2 packs of 5-pack at $8.99per pack, total: $17.98 to order item.
+A, [2017-08-19T01:40:56.236848 #2965]   ANY -- : 
+Extra Remaining Unit: 2 that cannot be grouped into a pack.
+D, [2017-08-19T01:40:56.237098 #2965] DEBUG -- : 
+	Added 12 of VFS5 to order.
+A, [2017-08-19T01:40:56.237215 #2965]   ANY -- : 	12 of Vegemite Scroll (VS5) at $ 17.98
+A, [2017-08-19T01:40:56.237361 #2965]   ANY -- : 		2 x 5-pack at $8.99 a pack with total: 17.98
+A, [2017-08-19T01:40:56.237485 #2965]   ANY -- : 
+Total for this order: 17.98
+A, [2017-08-19T01:40:56.237595 #2965]   ANY -- : 
+[Quantity]<space>[Item Code] >> 
+D, [2017-08-19T01:41:07.245020 #2965] DEBUG -- : 
+Input.new: { quantity: 3, item code: C }
+
+D, [2017-08-19T01:41:07.245275 #2965] DEBUG -- : 
+OrderItem.new: { remaining_units: 3 }
+
+A, [2017-08-19T01:41:07.245410 #2965]   ANY -- : 
+Extra Remaining Unit: 3 that cannot be grouped into a pack.
+D, [2017-08-19T01:41:07.245548 #2965] DEBUG -- : 
+	Added 3 of C to order.
+A, [2017-08-19T01:41:07.245667 #2965]   ANY -- : 	12 of Vegemite Scroll (VS5) at $ 17.98
+A, [2017-08-19T01:41:07.245895 #2965]   ANY -- : 		2 x 5-pack at $8.99 a pack with total: 17.98
+A, [2017-08-19T01:41:07.246020 #2965]   ANY -- : 	3 of Vegemite Scroll (VS5) at $ 0.0
+A, [2017-08-19T01:41:07.246141 #2965]   ANY -- : 
+Total for this order: 17.98
+A, [2017-08-19T01:41:07.246250 #2965]   ANY -- : 
+[Quantity]<space>[Item Code] >> 
+I, [2017-08-19T01:46:40.291994 #2965]  INFO -- : 
+End Simulation.
